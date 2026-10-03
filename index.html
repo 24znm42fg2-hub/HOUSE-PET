@@ -1,40 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#173f2c">
-<meta name="description" content="House Pet: rações, brinquedos, acessórios, cuidados veterinários e entregas para seu pet.">
-<title>House Pet | Tudo para seu melhor amigo</title>
-<style>
-:root{--g:#173f2c;--g2:#285b3d;--lime:#d8f39b;--cream:#f6f8f1;--ink:#1b2b20;--muted:#68756b;--line:#e4e9df}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}a{text-decoration:none;color:inherit}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.top{background:var(--g);color:#e8f2e7;text-align:center;padding:9px;font-size:12px}.top b{color:var(--lime)}header{position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:5}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:900;letter-spacing:-1px;color:var(--g)}.paw{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:var(--lime);font-size:23px}.brand small{display:block;font-size:9px;letter-spacing:1px;color:var(--muted)}.links{display:flex;gap:24px;font-size:14px;font-weight:650;color:#526154}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--g);color:white;padding:13px 19px;border-radius:30px;font-weight:750;font-size:14px;border:0;cursor:pointer}.btn:hover{background:var(--g2)}.btn.alt{background:white;color:var(--g);border:1px solid #cbd8c9}.hero{background:var(--cream)}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;padding:60px 0}.pill{display:inline-block;background:#e9f2df;color:var(--g2);border-radius:30px;padding:8px 12px;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase}h1{font-size:clamp(42px,5vw,64px);line-height:1.02;letter-spacing:-3px;color:var(--g);margin:20px 0}h1 span{color:#67904d}.hero p{font-size:16px;line-height:1.8;color:#5f6e62;max-width:500px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}.hero img{width:100%;height:390px;object-fit:cover;border-radius:30px}.trust{font-size:12px;color:#647366}.benefits{border-bottom:1px solid var(--line)}.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:22px 0}.benefit{display:flex;align-items:center;justify-content:center;gap:12px}.benefit i{font-style:normal;font-size:25px}.benefit strong{display:block;font-size:13px}.benefit small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.section{padding:72px 0;scroll-margin-top:85px}.head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.kicker{font-size:11px;font-weight:850;letter-spacing:2px;color:#64894e;text-transform:uppercase}h2{font-size:clamp(30px,4vw,42px);letter-spacing:-2px;line-height:1.1;color:var(--g);margin:9px 0}.head p{color:var(--muted);font-size:14px;line-height:1.7;max-width:380px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:white}.card img{display:block;width:100%;height:155px;object-fit:cover;background:#edf1e8}.copy{padding:16px}.copy h3{margin:0 0 7px;color:var(--g);font-size:16px}.copy p{font-size:12px;line-height:1.6;color:var(--muted);margin:0 0 12px}.textlink{font-size:12px;color:#56803e;font-weight:800}.products{background:var(--cream)}.tools{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}.tools input{flex:1;min-width:210px;border:1px solid #dfe6da;background:white;border-radius:14px;padding:13px 15px;font:inherit}.filters{display:flex;gap:7px;flex-wrap:wrap}.filter{border:1px solid #dfe6da;border-radius:25px;padding:10px 13px;background:white;color:#59675b;font-size:12px;font-weight:750;cursor:pointer}.filter.active{background:var(--g);color:white;border-color:var(--g)}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.product{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}.product img{width:100%;height:160px;object-fit:cover;background:#f0f2eb}.product .copy{display:flex;flex-direction:column;flex:1}.tag{font-size:10px;color:#60824c;font-weight:850;text-transform:uppercase;letter-spacing:1px}.product .btn{width:100%;font-size:12px;padding:11px;margin-top:auto}.delivery{padding:0 0 70px}.delivery-box{background:var(--g);color:white;border-radius:26px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:25px}.delivery-box h2{color:white;margin-top:0}.delivery-box p{color:#d5e4d7;line-height:1.7;font-size:14px;max-width:600px}.btn.lime{background:var(--lime);color:var(--g);white-space:nowrap}.vet{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.vet img{width:100%;height:320px;object-fit:cover;border-radius:25px}.vet p{color:var(--muted);line-height:1.8}.vet ul{padding:0;list-style:none;line-height:2.2;font-size:13px;color:#45564a}.footer{background:#102d1e;color:#eaf1e9;padding:40px 0 20px}.footerrow{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.footer p{color:#b8c9ba;max-width:340px;font-size:13px;line-height:1.7}.footerlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}.copyright{border-top:1px solid #31513b;margin-top:24px;padding-top:17px;color:#a9bead;font-size:11px}.float{position:fixed;right:18px;bottom:18px;background:#25d366;color:white;width:56px;height:56px;display:grid;place-items:center;border-radius:50%;font-size:26px;box-shadow:0 8px 24px #163c2c35;z-index:10}@media(max-width:800px){.links{display:none}.hero-grid,.vet{grid-template-columns:1fr}.hero-grid{padding:42px 0}.hero img{height:290px}.grid,.product-grid{grid-template-columns:repeat(2,1fr)}.benefit-grid{grid-template-columns:1fr}.benefit{justify-content:flex-start}.head{align-items:flex-start;flex-direction:column}.delivery-box{align-items:flex-start;flex-direction:column}.section{padding:55px 0}}@media(max-width:480px){.wrap{width:calc(100% - 28px)}h1{font-size:44px}.brand{font-size:19px}.hero img{height:240px}.grid,.product-grid{gap:10px}.card img{height:110px}.copy{padding:12px}.copy h3{font-size:14px}.product img{height:120px}.product .copy p{font-size:11px}.delivery-box{padding:24px}.nav .btn{font-size:12px;padding:11px 13px}}
-</style></head>
-<body><div class="top">🐾 Carinho, cuidado e praticidade para seu pet — <b>consulte nossas entregas!</b></div>
-<header><div class="wrap nav"><a class="brand" href="#inicio"><span class="paw">🐾</span><span>HOUSE PET<small>TUDO PARA SEU MELHOR AMIGO</small></span></a><nav class="links"><a href="#categorias">Categorias</a><a href="#produtos">Produtos</a><a href="#vet">Veterinária</a><a href="#entrega">Entregas</a></nav><a class="btn" href="#produtos">Ver produtos ↗</a></div></header>
-<main><section class="hero" id="inicio"><div class="wrap hero-grid"><div><span class="pill">Seu pet é da família</span><h1>Mais carinho para quem te dá <span>amor de sobra.</span></h1><p>Rações, brinquedos, acessórios e cuidado veterinário em um só lugar. A House Pet ajuda você a cuidar de quem faz seus dias mais felizes.</p><div class="actions"><a class="btn" href="#produtos">🛍️ Encontrar produtos</a><a class="btn alt" href="#vet">Conheça a veterinária</a></div><div class="trust">✓ Atendimento próximo &nbsp; ✓ Opções para cães e gatos</div></div><img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1000&q=85" alt="Cachorro e gato juntos"></div></section>
-<div class="benefits"><div class="wrap benefit-grid"><div class="benefit"><i>🥣</i><div><strong>Nutrição de qualidade</strong><small>Opções para diferentes necessidades</small></div></div><div class="benefit"><i>🩺</i><div><strong>Cuidado veterinário</strong><small>Atenção à saúde do seu pet</small></div></div><div class="benefit"><i>🏡</i><div><strong>Praticidade na entrega</strong><small>Consulte as condições</small></div></div></div></div>
-<section class="section" id="categorias"><div class="wrap"><div class="head"><div><div class="kicker">Explore a House Pet</div><h2>O que seu pet precisa,<br>você encontra aqui.</h2></div><p>Do potinho cheio à hora da brincadeira: descubra nossas categorias e consulte disponibilidade.</p></div><div class="grid">
-<a class="card" href="#produtos" data-filter="Rações"><img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc4?auto=format&fit=crop&w=600&q=80" alt="Rações para pets"><div class="copy"><h3>Rações</h3><p>Nutrição para acompanhar cada fase.</p><span class="textlink">Ver opções →</span></div></a>
-<a class="card" href="#produtos" data-filter="Brinquedos"><img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=600&q=80" alt="Cachorro brincando"><div class="copy"><h3>Brinquedos</h3><p>Mais diversão e momentos juntos.</p><span class="textlink">Ver opções →</span></div></a>
-<a class="card" href="#produtos" data-filter="Acessórios"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80" alt="Acessórios para pets"><div class="copy"><h3>Acessórios</h3><p>Conforto e praticidade no dia a dia.</p><span class="textlink">Ver opções →</span></div></a>
-<a class="card" href="#vet"><img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=600&q=80" alt="Atendimento veterinário"><div class="copy"><h3>Veterinária</h3><p>Informações sobre atendimentos.</p><span class="textlink">Saiba mais →</span></div></a></div></div></section>
-<section class="section products" id="produtos"><div class="wrap"><div class="head"><div><div class="kicker">Vitrine House Pet</div><h2>Encontre o favorito<br>do seu companheiro.</h2></div><p>Consulte pelo WhatsApp marcas, tamanhos, preços e disponibilidade. Os itens abaixo são exemplos iniciais.</p></div><div class="tools"><input id="search" type="search" placeholder="🔎 Buscar produto ou categoria..." aria-label="Buscar produtos"><div class="filters"><button class="filter active" data-category="Todos">Todos</button><button class="filter" data-category="Rações">Rações</button><button class="filter" data-category="Brinquedos">Brinquedos</button><button class="filter" data-category="Acessórios">Acessórios</button><button class="filter" data-category="Farmácia pet">Farmácia pet</button></div></div><div class="product-grid" id="productGrid">
-<article class="product" data-category="Rações" data-name="ração para cães"><img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc4?auto=format&fit=crop&w=600&q=80" alt="Ração para cães"><div class="copy"><span class="tag">Nutrição</span><h3>Rações para cães</h3><p>Consulte opções, marcas e tamanhos disponíveis.</p><button class="btn order" data-product="Rações para cães">Consultar produto ↗</button></div></article>
-<article class="product" data-category="Rações" data-name="ração para gatos"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=600&q=80" alt="Gato doméstico"><div class="copy"><span class="tag">Nutrição</span><h3>Rações para gatos</h3><p>Encontre a opção para seu gatinho.</p><button class="btn order" data-product="Rações para gatos">Consultar produto ↗</button></div></article>
-<article class="product" data-category="Brinquedos" data-name="brinquedos para pets"><img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=600&q=80" alt="Cachorro brincando"><div class="copy"><span class="tag">Diversão</span><h3>Brinquedos para pets</h3><p>Ideias para brincar e gastar energia.</p><button class="btn order" data-product="Brinquedos para pets">Consultar produto ↗</button></div></article>
-<article class="product" data-category="Acessórios" data-name="coleiras guias e acessórios"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80" alt="Cachorro com coleira"><div class="copy"><span class="tag">Dia a dia</span><h3>Coleiras e acessórios</h3><p>Consulte modelos, tamanhos e cores.</p><button class="btn order" data-product="Coleiras e acessórios">Consultar produto ↗</button></div></article>
-<article class="product" data-category="Farmácia pet" data-name="medicamentos e cuidados pet"><img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=600&q=80" alt="Cuidados veterinários"><div class="copy"><span class="tag">Cuidados</span><h3>Farmácia pet</h3><p>Consulte disponibilidade e orientação profissional quando necessária.</p><button class="btn order" data-product="Medicamentos e cuidados pet">Consultar produto ↗</button></div></article>
-<article class="product" data-category="Acessórios" data-name="potes comedouros bebedouros"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80" alt="Acessórios para animais"><div class="copy"><span class="tag">Conforto</span><h3>Potes e comedouros</h3><p>Itens úteis para a rotina de alimentação.</p><button class="btn order" data-product="Potes e comedouros">Consultar produto ↗</button></div></article>
-<article class="product" data-category="Rações" data-name="petiscos para cães e gatos"><img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=600&q=80" alt="Petiscos"><div class="copy"><span class="tag">Agrados</span><h3>Petiscos</h3><p>Consulte opções para agradar seu melhor amigo.</p><button class="btn order" data-product="Petiscos para cães e gatos">Consultar produto ↗</button></div></article>
-<article class="product" data-category="Acessórios" data-name="higiene limpeza cuidados pet"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80" alt="Higiene pet"><div class="copy"><span class="tag">Bem-estar</span><h3>Higiene e cuidados</h3><p>Produtos para a rotina de cuidado.</p><button class="btn order" data-product="Higiene e cuidados pet">Consultar produto ↗</button></div></article>
-</div></div></section>
-<section class="delivery" id="entrega"><div class="wrap"><div class="delivery-box"><div><h2>Seu pedido no conforto de casa. 🏡</h2><p>Precisa repor a ração ou encontrar um produto? Fale com a House Pet para consultar disponibilidade, valores e condições de entrega na sua região.</p></div><a class="btn lime wa" href="#contato">Consultar entrega pelo WhatsApp ↗</a></div></div></section>
-<section class="section" id="vet"><div class="wrap vet"><img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=1000&q=85" alt="Veterinário cuidando de um animal"><div><div class="kicker">Saúde e bem-estar</div><h2>Carinho também é cuidar da saúde.</h2><p>A House Pet também conta com atendimento veterinário. Entre em contato para saber quais serviços estão disponíveis, horários e como agendar.</p><ul><li>✓ Informações sobre os atendimentos</li><li>✓ Consulta de horários e agendamentos</li><li>✓ Orientações para sua visita</li></ul><a class="btn wa" href="#contato">Falar sobre veterinária ↗</a></div></div></section>
-<section class="section" id="contato" style="background:var(--cream);text-align:center;padding:48px 0"><div class="wrap"><div class="kicker">Estamos aqui para ajudar</div><h2>Conte com a House Pet.</h2><p style="color:var(--muted);line-height:1.7">Tire dúvidas sobre produtos, consulte entregas ou fale com nossa equipe.</p><a class="btn wa" href="#contato">💬 Chamar no WhatsApp</a><p style="font-size:11px;color:#7b877c;margin-top:16px">Endereço, telefone e horários serão adicionados assim que forem confirmados.</p></div></section></main>
-<footer class="footer"><div class="wrap"><div class="footerrow"><div><a class="brand" href="#inicio" style="color:white"><span class="paw">🐾</span><span>HOUSE PET<small style="color:#b4c8b5">TUDO PARA SEU MELHOR AMIGO</small></span></a><p>Rações, acessórios, brinquedos, cuidado veterinário e praticidade para quem faz parte da família.</p></div><div class="footerlinks"><a href="#categorias">Categorias</a><a href="#produtos">Produtos</a><a href="#vet">Veterinária</a><a href="#entrega">Entregas</a></div></div><div class="copyright">© <span id="year"></span> House Pet. Todos os direitos reservados.</div></div></footer><a class="float wa" href="#contato" aria-label="Fale com a House Pet">✆</a>
-<script>
-// Configure com o WhatsApp da loja: código do país + DDD + número, apenas números.
-// Exemplo de formato brasileiro: 5522999999999
-const WHATSAPP_NUMBER = "";
-function whatsapp(message="Olá, House Pet! Vim pelo site e gostaria de informações."){if(!WHATSAPP_NUMBER){alert("O WhatsApp da loja ainda não foi configurado. Adicione o número no arquivo index.html para ativar os pedidos.");return;}window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message),"_blank","noopener,noreferrer");}
-document.querySelectorAll(".wa").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();whatsapp();}));document.querySelectorAll(".order").forEach(b=>b.addEventListener("click",()=>whatsapp("Olá, House Pet! Vim pelo site e gostaria de consultar preço e disponibilidade de: "+b.dataset.product+".")));
-let filter="Todos";const search=document.getElementById("search"),cards=[...document.querySelectorAll(".product")];function render(){let count=0;cards.forEach(c=>{const ok=(filter==="Todos"||c.dataset.category===filter)&&(c.dataset.name+" "+c.innerText).toLocaleLowerCase("pt-BR").includes(search.value.trim().toLocaleLowerCase("pt-BR"));c.hidden=!ok;if(ok)count++;});let empty=document.getElementById("empty");if(!count&&!empty){empty=document.createElement("p");empty.id="empty";empty.textContent="Não encontramos produtos com essa busca. Tente outra palavra.";document.getElementById("productGrid").append(empty);}else if(count&&empty)empty.remove();}document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.category;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render();}));search.addEventListener("input",render);document.querySelectorAll("[data-filter]").forEach(a=>a.addEventListener("click",()=>{filter=a.dataset.filter;document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.category===filter));render();}));document.getElementById("year").textContent=new Date().getFullYear();
-</script></body></html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Pet | Pet Shop</title>
+  <meta name="description" content="House Pet — rações, medicamentos, acessórios e atendimento pelo WhatsApp.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img src="assets/logo.png" alt="House Pet">
+        <span>HOUSE <strong>Pet</strong></span>
+      </a>
+
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="whatsapp" href="https://wa.me/5522998959626" target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">🐾 Cuidando de quem faz parte da família</p>
+          <h1>Tudo para o seu pet, <span>pertinho de você.</span></h1>
+          <p class="hero-text">
+            Rações, medicamentos e acessórios para deixar a rotina do seu melhor amigo ainda melhor.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#destaques">Ver produtos</a>
+            <a class="btn secondary" href="https://wa.me/5522998959626" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="paw">🐾</div>
+          <p>House Pet</p>
+          <strong>Felicidade é receber o carinho de um focinho gelado.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="categorias" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Encontre o que precisa</p>
+            <h2>Para todos os momentos</h2>
+          </div>
+        </div>
+
+        <div class="category-grid">
+          <button class="category-card" data-filter="racoes">
+            <span>🥣</span>
+            <h3>Rações</h3>
+            <p>Alimentação para cães e gatos.</p>
+          </button>
+          <button class="category-card" data-filter="medicamentos">
+            <span>💊</span>
+            <h3>Medicamentos</h3>
+            <p>Cuidados e saúde do seu pet.</p>
+          </button>
+          <button class="category-card" data-filter="acessorios">
+            <span>🦴</span>
+            <h3>Acessórios</h3>
+            <p>Itens para conforto e diversão.</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="destaques" class="section products-section">
+      <div class="container">
+        <div class="section-heading products-heading">
+          <div>
+            <p class="eyebrow">Nossa vitrine</p>
+            <h2>Produtos em destaque</h2>
+          </div>
+          <input id="search" type="search" placeholder="Buscar produto...">
+        </div>
+
+        <div id="products" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="service-banner">
+      <div class="container service-inner">
+        <div>
+          <p class="eyebrow">Atendimento fácil</p>
+          <h2>Precisou? Chama a House Pet.</h2>
+          <p>Faça seu pedido ou agende pelo WhatsApp.</p>
+        </div>
+        <a class="btn white" href="https://wa.me/5522998959626" target="_blank" rel="noopener">Chamar no WhatsApp →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <div class="container footer-grid">
+      <div>
+        <h3>House Pet</h3>
+        <p>Rações • Medicamentos • Acessórios</p>
+      </div>
+      <div>
+        <strong>Onde estamos</strong>
+        <p>Rua Abel Siqueira, 53<br>Rio das Ostras — RJ</p>
+      </div>
+      <div>
+        <strong>Atendimento</strong>
+        <p><a href="https://wa.me/5522998959626" target="_blank" rel="noopener">WhatsApp</a></p>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> House Pet. Todos os direitos reservados.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
